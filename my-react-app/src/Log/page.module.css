@@ -1,0 +1,53 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/R.webp' );
+    background-size: cover;
+  background-position: center;
+   background-repeat: no-repeat;
+    
+}
+
+.label{
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  pointer-events: none;
+  transition: 0.3s ease all;
+
+}
+.inputcontainer input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  background: transparent;
+  
+}
+.inputcontainer input:focus + label,
+.inputcontainer input:valid + label {
+  top: -16px;
+  left: 8px;
+  font-size: 12px;
+  color: #1db954;
+}
+.inputcontainer span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #1db954; /* Spotify green */
+  transition: 0.4s;
+}
+.inputcontainer input:focus ~ span {
+  width: 109%;
+}
+.input{
+  padding-top: 15px;
+}
